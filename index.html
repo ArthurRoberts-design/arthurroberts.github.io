@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa592 - Beauty & Co!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Beauty & Co.</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Book Online</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero-section">
+        <div class="hero-content">
+            <div>
+                <h2>Welcome to Spa 592</h2>
+                <p>Experience the Ultimate Relaxation</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="form-image">
+            <img src="images/download (2).jpeg" >
+        </div>
+        <div class="form-container">
+            <h3>Book Your Appointment</h3>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                    <option value="face-cleansing">Face Cleansing</option>
+                    <option value="full-body-massage">Full Body Massage</option>
+                    <option value="custom-facial">Custom Facial</option>
+                    <option value="haircut">Haircut</option>
+                </select>
+
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes"></textarea>
+
+                <button type="submit" id="submitBtn">
+                    <span class="button-text">Book Appointment</span>
+                    <span class="loading-spinner" style="display: none;">
+                        <!-- Add a loading spinner icon here -->
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="card">
+            <h3 class="card-title">Face Cleansing</h3>
+            <p class="card-description">Revitalize Your Face with Our Deep Cleanse</p>
+            <p>1 hr - $70</p>
+            <button>Book Now</button>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Full Body Massage</h3>
+            <p class="card-description">Relax and Unwind with a Soothing Massage</p>
+            <p>1 hr 30 min - $120</p>
+            <button>Book Now</button>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Custom Facial</h3>
+            <p class="card-description">Experience Personalized Skin Care</p>
+            <p>1 hr - $90</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="quote">"The most relaxing massage I've ever had. The ambiance was perfect!"</div>
+                <div class="client-info">
+                    <img src="avatar1.jpg" alt="Sarah M." class="client-image">
+                    <div class="client-details">
+                        <div class="client-name">Sarah M.</div>
+                        <div class="client-location">New York, NY</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote">"Their facial treatment completely transformed my skin. I'm a regular now!"</div>
+                <div class="client-info">
+                    <img src="avatar2.jpg" alt="Michael R." class="client-image">
+                    <div class="client-details">
+                        <div class="client-name">Michael R.</div>
+                        <div class="client-location">Boston, MA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="plus-icon">+</span>
+                    What should I wear to my spa appointment?
+                </div>
+                <div class="faq-answer">
+                    Wear comfortable, loose-fitting clothing. We provide robes and slippers for your treatment.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="plus-icon">+</span>
+                    How early should I arrive?
+                </div>
+                <div class="faq-answer">
+                    Please arrive 15 minutes before your scheduled appointment to complete paperwork and change.
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2023 Beauty & Co. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>

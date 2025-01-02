@@ -1,0 +1,295 @@
+/* Color Variables */
+:root {
+    --light-pink: #FFE4E1;    /* Soft pink */
+    --medium-pink: #DB7093;   /* Deep pink */
+    --dark-pink: #C71585;     /* Dark pink */
+}
+
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #2C0A1C;
+    color: var(--light-pink);
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--medium-pink);
+    color: black;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--medium-pink);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: var(--dark-pink);
+    background-color: rgba(219, 112, 147, 0.1);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 600px;
+    background-image: url('/placeholder.svg?height=600&width=1200');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(158, 62, 113, 0.823);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    border: 1px solid var(--light-pink);
+    background: transparent;
+    color: var(--light-pink);
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: var(--dark-pink);
+    color: rgb(240, 238, 238);
+}
+
+/* Form Styles */
+.form-section {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.form-container {
+    background-color: #3D1C2F;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.form-image {
+    flex: 1;
+    min-height: 400px;
+    background-color: #999999;
+}
+
+.form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--light-pink);
+}
+
+.form-container form input, 
+.form-container form select, 
+.form-container form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--medium-pink);
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.form-container form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--medium-pink);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.form-container form button:hover {
+    background-color: var(--dark-pink);
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #3D1C2F;
+    border: 2px solid var(--medium-pink);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--medium-pink);
+}
+
+.card-description {
+    color: #FFB6C1;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.testimonial-card {
+    background: #3D1C2F;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 350px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.faq-item {
+    background: #3D1C2F;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    color: var(--medium-pink);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-pink);
+    color: rgb(213, 200, 200);
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .form-section {
+        flex-direction: column;
+    }
+    
+    .form-image {
+        min-height: 200px;
+    }
+    
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+} 
