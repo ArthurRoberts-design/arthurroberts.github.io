@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css"> <!-- Calendar CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        section {
+            max-width: 1200px; /* Wider form */
+            margin: 50px auto;
+            background-color: #333; /* Darker background for form */
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5rem; /* Larger title */
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 25px;
+            font-size: 1.5rem; /* Larger label text */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 15px; /* Larger input fields */
+            margin-top: 10px;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #555;
+            color: #fff;
+        }
+
+        button {
+            width: 100%;
+            padding: 20px; /* Larger button */
+            margin-top: 30px;
+            font-size: 1.5rem;
+            background-color: #d52000; /* red``````+ color for button */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4500; /* Darker hover color */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #888;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html">Book Appointment</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Book an Appointment</h1>
+        <p>Fill out the form below to schedule your appointment.</p>
+        
+        <!-- Booking form -->
+        <form>
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <!-- Phone Number Field -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <!-- Service Type -->
+            <label for="service">Select a Service:</label>
+            <select id="service">
+                <option value="massage">Massage Therapy</option>
+                <option value="facial">Facial Treatment</option>
+                <option value="scrub">Salt Scrub Therapy</option>
+                <option value="hotstone">Hot Stone Therapy</option>
+                <option value="bodymask">Full Body Mask</option>
+            </select>
+
+            <!-- Date Picker -->
+            <label for="appointment-date">Select a Day:</label>
+            <input type="text" id="appointment-date" placeholder="Choose a date" required>
+
+            <!-- Time Picker -->
+            <label for="appointment-time">Select a Time:</label>
+            <select id="appointment-time" required>
+                <option value="8:00am">8:00am</option>
+                <option value="9:00am">9:00am</option>
+                <option value="10:00am">10:00am</option>
+                <option value="11:00am">11:00am</option>
+                <option value="12:00pm">12:00pm</option>
+                <option value="1:00pm">1:00pm</option>
+                <option value="2:00pm">2:00pm</option>
+                <option value="3:00pm">3:00pm</option>
+                <option value="4:00pm">4:00pm</option>
+                <option value="5:00pm">5:00pm</option>
+                <option value="6:00pm">6:00pm</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Booking Solutions</p>
+    </footer>
+    
+
+    <!-- Include Flatpickr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+    <script>
+        // Initialize the Flatpickr calendar
+        flatpickr("#appointment-date", {
+            enableTime: false,  // Only date picker
+            dateFormat: "Y-m-d",
+            minDate: "today",   // Disable past dates
+        });
+    </script>
+  
+</body>
+<img src="timetable" alt="">
+
+</html>
